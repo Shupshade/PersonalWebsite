@@ -1,3 +1,4 @@
+/*
 .container > div {
     display: flex;
     justify-content: center;
@@ -26,3 +27,4 @@ html, body {
 .container > div:nth-child(4n) {
       background-color: #ffcc5c;
 }
+*/

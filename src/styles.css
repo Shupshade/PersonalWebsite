@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 .container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #ffeead;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
 }
 
 html, body {
+  box-sizing: border-box;
   background-color: #ffeead;
-  margin: 10px;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
 }
 
 .container > div:nth-child(1n) {
@@ -21,34 +24,31 @@ html, body {
 }
 
 .container > div:nth-child(2n) {
-      background-color: #ff6f69;
+  background-color: #ff6f69;
 }
 
 .container > div:nth-child(4n) {
-      background-color: #ffcc5c;
+  background-color: #ffcc5c;
 }
+
 
 .container {
     height: 100%;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px auto 50px;
-    grid-template-areas: 
-        "h h h h h h h h h h h h"
-        "c c c c c c c c c c c c"
-        "f f f f f f f f f f f f";
+    grid-template-rows: 40px auto 40px;
 }
 
 .header {
-    grid-area: h;
+    grid-column: 1 / -1;
 }
 
 .content {
-    grid-area: c;
+    grid-column: 1 / -1;
 }
 
 .footer {
-    grid-area: f;
+    grid-column: 1 / -1;
 }
 
