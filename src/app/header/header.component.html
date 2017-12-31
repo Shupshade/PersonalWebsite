@@ -1,1 +1,14 @@
-<p>header component</p>
+<div class="btn-group" ngbRadioGroup name="radioBasic">
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" [value]="1"> Left (pre-checked)
+  </label>
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" value="middle"> Middle
+  </label>
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" [value]="false"> Right
+  </label>
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" [value]="false"> About
+  </label>
+</div>
